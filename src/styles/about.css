@@ -12,7 +12,7 @@
     display: inline-block;
     padding: 10px;
     width: 100%;
-    /* min-height: 120vh; */
+    min-height: 120vh;
     color: white;
     background-repeat: no-repeat;
     background-position: 10% 10%;
@@ -98,7 +98,7 @@
 }
 .team_member {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 
 /* Intezar */
@@ -183,10 +183,22 @@
     justify-content: space-between;
 }
 
-@media (min-width:400px) and (max-width:1200px) {
+@media (min-width:300px) and (max-width:1200px) {
     .team_member{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: block;
     }
+    .about_box{
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: block;
+    }
+   .box_one, .box_two, .box_three{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+   }
     .content{
         font-size: 15px;
     }
